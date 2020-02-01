@@ -1,0 +1,267 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General
+2. Anything under 1024px
+3. Anything under 959px
+4. Anything under 767px
+5. Anything under 500px
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. General]
+-------------------------------------------------------------------*/
+
+.wpex-container {
+    max-width: 85%;
+}
+
+.wpex-container .wpex-container {
+    max-width: none;
+}
+
+.wpex-menu-mobile-toggle .fa {
+    margin-right: 7px;
+}
+
+.wpex-site-header.default .wpex-mobile-buttons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+}
+
+.wpex-site-header-wrap.centered-logo-minimal-nav .wpex-mobile-buttons {
+    text-align: center;
+}
+
+/*------------------------------------------------------------------
+[1. Anything under 1024px]
+-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1024px) {
+
+	.wpex-row .wpex-col.wpex-loop-entry {
+	    width: 100%;
+	    margin-bottom: 25px !important;
+	}
+
+	.wpex-loop-entry-title {
+	    font-size: 2em;
+	}
+
+	.wpex-mobile-left-right.wpex-no-media .wpex-loop-entry-content {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.wpex-mobile-left-right .wpex-loop-entry-meta,
+	.wpex-mobile-left-right .wpex-loop-entry-excerpt,
+	.wpex-mobile-left-right .wpex-loop-entry-footer,
+	.wpex-mobile-left-right .wpex-loop-entry-readmore {
+	    display: none;
+	}
+
+}
+
+/*------------------------------------------------------------------
+[2. Left/Right Entry Styles]
+-------------------------------------------------------------------*/
+
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+
+	.wpex-mobile-left-right.wpex-loop-entry .wpex-boxed-container {
+	    padding: 20px;
+	}
+
+	.wpex-mobile-left-right .wpex-loop-entry-media {
+	    float: left;
+	    margin: 0;
+	    width: 35%;
+	}
+
+	.wpex-mobile-left-right .wpex-loop-entry-content {
+	    float: left;
+	    width: 65%;
+	    padding-left: 25px;
+	}
+
+}
+
+/*------------------------------------------------------------------
+[3. Anything under 959px]
+-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 959px) {
+	
+	.wpex-content-area,
+	.wpex-sidebar {
+	    width: 100% !important;
+	    float: none;
+	}
+
+	.wpex-sidebar {
+	    clear: both;
+	    padding: 50px 0 0;
+	    max-width: 80%;
+	    margin: 0 auto;
+	}
+
+	.wpex-full-slider-caption {
+	    padding: 20px;
+	    max-width: none;
+	    width: 100%;
+	}
+
+}
+
+/*------------------------------------------------------------------
+[4. Anything under 767px]
+-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+	body {
+	    font-size: 13px;
+	}
+
+	.wpex-row .wpex-col {
+	    float: none;
+	    width: 100%;
+	    clear: both;
+	}
+
+	.wpex-boxed-container {
+	    padding: 30px;
+	    margin-bottom: 30px;
+	}
+
+	.sidebar-container {
+	    max-width: none;
+	}
+
+	.wpex-page-thumbnail,
+	.single .wpex-post-slider-wrap,
+	.wpex-loop-entry-media,
+	.wpex-post-thumbnail,
+	.wpex-post-video {
+	    margin: -30px -30px 30px;
+	}
+
+	.site-content {
+	    margin: 30px auto;
+	}
+
+	.wpex-full-slider-wrap,
+	.wpex-row .wpex-col-1,
+	.wpex-ad-region.single-top,
+	.wpex-ad-region.archives-top {
+	    margin-bottom: 30px;
+	}
+
+	.match-height {
+	    height: auto !important;
+	}
+
+	.wpex-site-wrap .wpex-site-nav li.wpex-xtra-menu-item {
+	    display: none;
+	}
+
+	.wpex-site-wrap .wpex-site-nav li.wpex-menu-mobile-toggle {
+	    display: block;
+	}
+
+	.wpex-full-slider-wrap .lSAction a,
+	.wpex-post-slider-wrap .lSAction a {
+	    width: 30px;
+	}
+
+	.wpex-full-slider-wrap .lSAction a .fa,
+	.wpex-post-slider-wrap .lSAction a .fa {
+	    height: 60px;
+	    line-height: 60px;
+	    font-size: 21px;
+	    margin-top: -30px;
+	}
+
+	.wpex-full-slider-caption {
+	    width: 100%;
+	    padding: 15px;
+	}
+
+	.wpex-full-slider-caption-title {
+	    font-size: 1em;
+	}
+
+	.wpex-full-slider-caption-title span.date {
+	    display: none;
+	}
+
+	.wpex-post-slider-caption {
+	    font-size: 12px;
+	    padding: 10px;
+	}
+
+}
+
+/*------------------------------------------------------------------
+[5. Anything under 500px]
+-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+
+	.wpex-site-header {
+	    padding-right: 75px;
+	}
+
+	.wpex-mobile-left-right .wpex-loop-entry-media {
+	    margin: -30px -30px 30px;
+	}
+
+	.wpex-mobile-left-right .wpex-loop-entry-title {
+	    margin: 0;
+	}
+
+	/*author entry*/
+	.wpex-author-entry-inner {
+		padding-left: 0;
+	}
+	.wpex-author-entry-avatar {
+		position: relative;
+		top: auto;
+		left: auto;
+		margin-bottom: 20px;
+	}
+	.wpex-author-entry-social a {
+		margin-bottom: 4px;
+	}
+
+	/*author info*/
+	.wpex-author-info-inner {
+		padding-left: 0;
+	}
+	.wpex-author-info-avatar {
+		position: relative;
+		top: auto;
+		left: auto;
+		margin-bottom: 20px;
+	}
+	.wpex-author-info-social a {
+		margin-bottom: 4px;
+	}
+
+	/*post related*/
+	.wpex-related-post-thumbnail,
+	.wpex-related-post-content {
+		width: 100%;
+	}
+	.wpex-related-post-thumbnail {
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+}

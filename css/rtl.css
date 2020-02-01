@@ -1,0 +1,284 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Main
+2. Header
+3. Posts
+4. Social Share
+5. Comments
+6. Widgets
+7. WooCommerce
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. Main]
+-------------------------------------------------------------------*/
+body {
+    direction: rtl
+}
+ul,
+ul li {
+    list-style-position: inside
+}
+
+/*scroll to top*/
+a.wpex-site-scroll-top.show {
+    right: auto;
+    left: 40px;
+}
+
+/*page numbers*/
+.wpex-page-numbers li {
+    float: right
+}
+.next.page-numbers .fa:before {
+    content: "\f104"
+}
+.prev.page-numbers .fa:before {
+    content: "\f105"
+}
+
+/*slider caption*/
+.wpex-full-slider-caption {
+    left: 0;
+    right: auto;
+}
+
+/*entries*/
+.wpex-entry-cat a,
+.wpex-border-button {
+    float: right
+}
+
+/*------------------------------------------------------------------
+[1. Header]
+-------------------------------------------------------------------*/
+
+/*header*/
+.wpex-site-header.default .wpex-site-branding {
+    float: right
+}
+.wpex-site-header.default .wpex-site-nav {
+    right: auto;
+    left: 0;
+}
+.wpex-dropdown-arrow-down {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.wpex-dropdown-menu ul {
+    right: -20px;
+    left: auto;
+}
+.wpex-dropdown-menu ul ul {
+    left: auto;
+    right: 100%;
+}
+.wpex-site-nav .wpex-dropdown-menu > li {
+    float: right;
+    margin-right: 0;
+    margin-left: 30px;
+}
+.wpex-header-searchform {
+    right: auto;
+    left: 0;
+}
+.wpex-header-searchform input[type="search"] {
+    padding-left: 0;
+    padding-right: 20px;
+    border: 0;
+    border-right: 1px solid #ddd;
+}
+.wpex-header-searchform-submit {
+    right: auto;
+    left: 0;
+}
+
+/*------------------------------------------------------------------
+[3. Posts]
+-------------------------------------------------------------------*/
+
+/*post tags*/
+.wpex-post-tags .fa {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/*post next/prev*/
+.wpex-post-navigation .nav-next {
+    float: right;
+    text-align: left;
+}
+.wpex-post-navigation .nav-prev {
+    float: left;
+    text-align: right;
+}
+.wpex-post-navigation .fa {
+    display: none
+}
+
+/*post related*/
+.wpex-related-post-thumbnail {
+    float: right;
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+/*author info*/
+.wpex-author-info-inner {
+    padding-left: 0;
+    padding-right: 100px;
+}
+.wpex-author-info-avatar {
+    right: 0
+}
+.wpex-author-info-social a {
+    float: right;
+    margin-left: 0;
+    margin-right: 6px;
+}
+
+/*------------------------------------------------------------------
+[4. Social Share]
+-------------------------------------------------------------------*/
+.wpex-post-share li {
+    float: right
+}
+.wpex-post-share a .fa {
+    margin-right: 0;
+    margin-left: 6px;
+}
+
+/*------------------------------------------------------------------
+[5. Comments]
+-------------------------------------------------------------------*/
+.comment-details {
+    margin-left: 0;
+    margin-right: 80px;
+}
+.comment-author {
+    right: 0
+}
+#comments .comment-footer a {
+    float: right;
+    margin-right: 0;
+    margin-left: 4px;
+}
+#comments a#cancel-comment-reply-link {
+    float: left
+}
+
+/*------------------------------------------------------------------
+[6. Widgets]
+-------------------------------------------------------------------*/
+.wpex-site-searchform button {
+    right: auto;
+    left: 0;
+}
+.wpex-site-searchform input[type="search"] {
+    padding-left: 30px;
+    padding-right: 12px;
+}
+
+/*------------------------------------------------------------------
+[7. WooCommerce]
+-------------------------------------------------------------------*/
+.wpex-cart-dropdown {
+    right: auto;
+    left: 0;
+}
+.woocommerce .widget_shopping_cart .cart_list li,
+.woocommerce.widget_shopping_cart .cart_list li,
+.woocommerce ul.cart_list li,
+.woocommerce ul.product_list_widget li {
+    padding-right: 80px;
+    padding-left: 0;
+}
+.woocommerce ul.cart_list li img,
+.woocommerce ul.product_list_widget li img {
+    left: auto;
+    right: 0;
+}
+.wpex-shop-carousel-wrap .lSSlideOuter .lSPager.lSpg {
+    right: auto;
+    left: 0;
+}
+.woocommerce .wpex-archive-title {
+    float: right
+}
+.woocommerce .wpex-shop-orderby {
+    float: left
+}
+.woocommerce .wpex-shop-orderby li.wpex-border-button .fa {
+    margin-left: 0;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 10px;
+    border-left: 0;
+    border-right: 1px solid #000;
+}
+.woocommerce .wpex-shop-orderby ul {
+    left: 0;
+    right: auto;
+}
+.woocommerce #content div.product div.images,
+.woocommerce div.product div.images,
+.woocommerce-page #content div.product div.images,
+.woocommerce-page div.product div.images {
+    float: right
+}
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary {
+    float: left
+}
+.woocommerce div.product form.cart .button,
+.woocommerce div.product form.cart div.quantity {
+    float: right
+}
+.woocommerce div.product form.cart div.quantity {
+    margin-left: 4px;
+    margin-right: 0;
+}
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li,
+.woocommerce div.product .woocommerce-tabs ul.tabs li,
+.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li,
+.woocommerce-page div.product .woocommerce-tabs ul.tabs li {
+    float: right
+}
+.woocommerce .star-rating {
+    float: left
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+    margin-left: 0;
+    margin-right: 80px;
+}
+.woocommerce #reviews #comments ol.commentlist li img.avatar {
+    right: 0
+}
+.woocommerce .woocommerce-error .button,
+.woocommerce .woocommerce-info .button,
+.woocommerce .woocommerce-message .button {
+    float: left
+}
+.woocommerce .woocommerce-error,
+.woocommerce .woocommerce-info,
+.woocommerce .woocommerce-message {
+    padding: 1em 3.5em 1em 2em !important
+}
+.woocommerce .woocommerce-product-rating .star-rating {
+    float: right
+}
+.woocommerce .woocommerce-error:before,
+.woocommerce .woocommerce-info:before,
+.woocommerce .woocommerce-message:before {
+    left: auto;
+    right: 1.5em;
+}
+.woocommerce #content div.product div.thumbnails a,
+.woocommerce div.product div.thumbnails a,
+.woocommerce-page #content div.product div.thumbnails a,
+.woocommerce-page div.product div.thumbnails a {
+    float: right
+}

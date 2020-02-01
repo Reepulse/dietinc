@@ -1,0 +1,155 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General
+2. Phone Portrait and Landscape
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. General]
+-------------------------------------------------------------------*/
+.woocommerce ul.products li.product:nth-child(2n),
+.woocommerce-page ul.products li.product:nth-child(2n) {
+    float: left
+}
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    clear: none
+}
+.woocommerce ul.products li.product.first,
+.woocommerce-page ul.products li.product.first {
+    clear: both
+}
+
+/*------------------------------------------------------------------
+[2.  Phone Portrait and Landscape]
+-------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+    
+    /*product widths*/
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        width: 100% !important;
+        clear: both;
+    }
+    
+    /*shop sort and order*/
+    .woocommerce .woocommerce-result-count {
+        display: none
+    }
+    .woocommerce .woocommerce-ordering {
+        float: none
+    }
+    .woocommerce .woocommerce-ordering .orderby,
+    .woocommerce .woocommerce-ordering .orderby span {
+        width: 100% !important
+    }
+    
+    /*fix some margins*/
+    .woocommerce div.product div.images {
+        margin-bottom: 30px
+    }
+    
+    /*disable product tabs and show inline*/
+    .woocommerce div.product .woocommerce-tabs {
+        padding-top: 0
+    }
+    .woocommerce-tabs .tabs {
+        display: none !important
+    }
+    .product .product_meta,
+    .product .woocommerce-tabs .panel {
+        display: block !important;
+        margin: 0 0 40px;
+    }
+    
+    /*cart collaterals*/
+    .woocommerce .cart-collaterals .cross-sells {
+        display: none
+    }
+    .woocommerce .cart-collaterals .cart_totals,
+    .woocommerce-page .cart-collaterals .cart_totals {
+        float: none;
+        width: 100%;
+    }
+    .woocommerce-cart .cart-collaterals .cart_totals table td {
+        text-align: right
+    }
+    
+    /*trim down cart table*/
+    .shop_table th.product-price,
+    .shop_table .product-thumbnail,
+    .woocommerce-page table.shop_table td.product-price {
+        display: none !important
+    }
+    
+    /* cart coupo*/
+    .woocommerce form.checkout_coupon {
+        margin-top: -10px
+    }
+    .woocommerce form.checkout_coupon .form-row-first,
+    .woocommerce form.checkout_coupon .form-row-last {
+        float: none;
+        width: 100%;
+    }
+    .woocommerce #content table.cart td.actions .button,
+    .woocommerce #content table.cart td.actions .input-text,
+    .woocommerce #content table.cart td.actions input,
+    .woocommerce table.cart td.actions .button,
+    .woocommerce table.cart td.actions .input-text,
+    .woocommerce table.cart td.actions input,
+    .woocommerce-page #content table.cart td.actions .button,
+    .woocommerce-page #content table.cart td.actions .input-text,
+    .woocommerce-page #content table.cart td.actions input,
+    .woocommerce-page table.cart td.actions .button,
+    .woocommerce-page table.cart td.actions .input-text,
+    .woocommerce-page table.cart td.actions input {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+    
+    /*cart button*/
+    .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+        width: 100%
+    }
+    
+    /*checkout addresses*/
+    .woocommerce .woocommerce-checkout .col2-set .col-1,
+    .woocommerce .woocommerce-checkout .col2-set .col-2 {
+        width: 100%;
+        float: none;
+    }
+    .woocommerce .woocommerce-checkout .col2-set .col-1 {
+        margin-bottom: 20px
+    }
+    
+    /*checkout payment*/
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table,
+    .woocommerce-checkout-payment {
+        width: 100%;
+        float: none;
+    }
+    
+    /*order details*/
+    .woocommerce ul.order_details li {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border: 0;
+        border-bottom: 1px solid #eee;
+    }
+    .woocommerce .order_details li:last-of-type {
+        padding: 0;
+        margin: 0;
+    }
+    
+    /*order addresses*/
+    .woocommerce .col2-set.addresses .col-1,
+    .woocommerce .col2-set.addresses .col-2 {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
